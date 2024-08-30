@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px 24px;
+  padding: 24px;
+  max-width: 1158px;
+  margin: 0 auto;
+}
+
+.gallery li {
+  display: flex;
+  flex-basis: calc((100% - 24px * 2) / 3);
+  transition: transform 300ms ease-in-out;
+}
+
+.gallery li:hover {
+  transform: scale(1.05);
+}
